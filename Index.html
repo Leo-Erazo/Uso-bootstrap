@@ -6,11 +6,9 @@
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="cinema-body">
-
-	<nav class="navbar">
-		<h1 class="welcome-title"><img src="img/logo-JohnL.jpg" alt="">El Cine del John Lennon (Pero el de la Holanda)</h1>
+	<nav class="navbar navbar-inverse navbar-fixed-top affix-top">
+		<h1 class="welcome-title"><img class= "logo" src="img/logo-JohnL.jpg" alt="">El Cine del John Lennon (Pero el de la Holanda)</h1>
 	</nav>
-
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron">
@@ -22,23 +20,18 @@
 						<h2 class="text-uppercase welcome-title">bienvenidos a</h2>
 						<img class="jumbotron-img" src="img/logo-JohnL.jpg" alt="">
 						<div class="jumbotron-text">Síguenos en nuestras <abbr title="Facebook, Twitter, Instagram">redes sociales</abbr> para obtener información sobre los últimos estrenos del cine</div>
-
 						<div class="redes-sociales">
 							<img class="img-social img-rounded" src="img/facebook.png" alt="">
 							<img class="img-social img-rounded" src="img/twitter.jpg" alt="">
 							<img class="img-social img-rounded" src="img/instagram.png" alt="">
-
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<div class="titulo-cartelera">
 				<header class="text-capitalize text-center titulo-text">películas en cartelera</header>	
 			</div>
-
 		</div>
-
 		<div class="row movies-row">
 			<div class="col-xs-3 col-md-2 col-lg-2 movies-column text-center">
 				<div class="row movie-title">
@@ -82,9 +75,7 @@
 				<div class="row movie-title">The man who..</div>
 				<div class="row movie-title">Sala 6</div>		
 			</div>
-			
 		</div>
-
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 titulo-cartelera left-column">
 				<header class="titulo-text text-capitalize text-center">próximos estrenos</header>
@@ -93,7 +84,6 @@
 				<header class="titulo-text text-capitalize text-center">mejor calificada</header>
 			</div>		
 		</div>
-
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-column movies-row">
 				<div class="row">
@@ -148,7 +138,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-6 col-lg-6 left-column right-column movies-row">
+			<div class="col-md-6 col-lg-6 left-column right-column movies-row-last">
 				<p class="services-text">En nuestro cine te ofrecemos los siguientes servicios para brindarte la mejor diversión y que disfrutes al máximo:</p>
 
 				<dl class="dl-horizontal services-text">
@@ -164,8 +154,39 @@
 				<h1 class="text-uppercase text-center welcome-title">Te esperamos!</h1>
 			</div>
 
-			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 movies-row">
-					
+			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 movies-row-last">
+					<form role="Form">
+						<fieldset>
+							<div class="form-group text-center">
+								<legend class="user-data">Datos Personales</legend>
+								<input type="text" name="nombre" id="nombre" class="form-control input-element" placeholder="Nombre completo">
+								<input type="text" name="email" id="email" placeholder="Correo electrónico" class="form-control input-element" placeholder="Correo Electrónico">
+								<input type="text" name="telefono" id="telefono" class="form-control input-element" placeholder="Teléfono">
+								<input type="text" name="ciudad" id="ciudad" class="form-control input-element" placeholder="Ciudad">
+							</div>
+							<div class="form-group text-center">
+								<legend class="user-data">Elige tus categorías favoritas</legend>
+								<input type="checkbox" name="cat1" id="cat1">
+								<label class="label-class" for="cat1">Fear</label>
+								<input type="checkbox" name="cat1" id="cat2">
+								<label class="label-class" for="cat2">Comedy</label>
+								<input type="checkbox" name="cat1" id="cat3">
+								<label class="label-class" for="cat3">Thriller</label>
+								<input type="checkbox" name="cat1" id="cat4">
+								<label class="label-class" for="cat4">Romance</label>
+								<input type="checkbox" name="cat1" id="cat5">
+								<label class="label-class" for="cat5">Action</label>
+							</div>
+							<div class="text-center">
+								<legend class="user-data">Deseas recibir correo desde nuestro sitio?</legend>
+								<label class="label-class" for="Sí"><input type="radio" name="si" id="si">Sí</label>
+								<label class="label-class" for="No"><input type="radio" name="no" id="no">No</label>
+							</div>
+							<div class="text-center">
+								<button class="btn btn-primary btn-save">Guardar</button>
+							</div>
+						</fieldset>
+					</form>
 			</div>
 		</div>
 	</div>

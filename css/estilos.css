@@ -1,19 +1,22 @@
 
 .cinema-body{
 	background: url(../img/cinema.jpg);
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	background-position: center center;
 	width: 100%;
 	height: 100%;
 }
 
-.navbar{
-	height: 10%;
-	background: rgba(0, 0, 0, 0.5);
+.navbar-inverse{
+	min-height: 10%;
+	background: rgba(4, 6, 8, 0.5);
+	border: none;
 }
 
-.navbar img{
-	width: 100px;
+.logo{
+	width: 80px;
 }
 
 .container{
@@ -24,19 +27,19 @@
 .jumbotron{
 	background: url("../img/img-jumbotron.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center center;
 	min-height: 500px;
 	margin-bottom: 0px;
-	border-radius: 0px;
+	border-radius: 0px !important;
 
 }
 
 .titulo-cartelera{
 	/*margin-top: 0px;*/
 	min-height: 45px;
-	background: rgba(100, 0, 0, 0.5);
+	background: rgba(100, 0, 0, 0.8);
 }
 
 .movies-row{
@@ -52,6 +55,13 @@
 	/*background: #bbccdd;*/
 	min-height: 330px;
 	border: 1px dashed white;
+}
+
+.movies-row-last {
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 425px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -147,4 +157,35 @@
 	color: white;
 	text-align: center;
 	padding: 10px;
+}
+
+.user-data{
+	margin-top: 10px;
+	font-size: 18px;
+	color: white;
+}
+
+.input-element{
+	width: 100%;
+	height: 28px;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+	background-color: rgba(255,255,255,0.4);
+	border: 0px;
+	border-radius: 4px;
+
+
+}
+
+.label-class{
+	color: white;
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+.btn-save{
+	width: 40%;
+	background-color: rgba(255,255,255,0.5);
+	color: white;
 }
